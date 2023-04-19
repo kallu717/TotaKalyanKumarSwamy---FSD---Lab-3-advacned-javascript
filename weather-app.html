@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+	<style>
+		.spinner {
+			border: 4px solid #f3f3f3;
+			border-top: 4px solid #3498db;
+			border-radius: 50%;
+			width: 20px;
+			height: 20px;
+			animation: spin 2s linear infinite;
+			margin-right: 10px;
+			display: none;
+		}
+    
+
+		@keyframes spin {
+			0% { transform: rotate(0deg); }
+			100% { transform: rotate(360deg); }
+		}
+		body {
+			background-image: url("/Users/klitrio/Desktop/weather app/bg 3.jpg");
+    }
+	</style>
+</head>
+<body>
+  <div style="text-align:center">
+	<h1>Weather App</h1>
+	<form>
+		<label for="city">Enter City Name:</label>
+		<input type="text" autocomplete="on" class="search-box" placeholder="Search for a city..." />
+		<button type="submit" id="submit">Get Weather</button>
+		<span class="spinner"></span>
+	</form>
+	<div id="weather-info"></div>
+	<script src="weather api.js"></script>
+</div>
+</body>
+</html>
